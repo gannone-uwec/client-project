@@ -1,0 +1,583 @@
+/* Almost every button goes to a fake error page I created:
+THIS IS INTENTIONAL; That means the links are working correctly.
+Some of the pages may have grammar that is intentionally not necessarily right:
+For example, there are no periods after the fake AP style article entries.
+And those entries are not intended to be linked to anything.
+Also, all of the black pages itentionally have hotbars that do not work.
+And, they also are sized to cover too much of the page.
+That section is supposed to seem glitchy on purpose.
+Additionally, the last several pages are hidden behind invisible links.
+Penultimately, the button link boxes are on the words more than the button itself.
+Lastly, it's default is not at full width for the white pages because
+to do so would require altering SVGs directly, which I don't have tome for */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.image-container {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.image-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.menu-bar-overlay {
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    display: flex;
+    gap: 15px;
+    font-size: 1em;
+    z-index: 10;
+    font-family: Helvetica, sans-serif;
+}
+
+.menu-bar-overlay a {
+    color: #000;
+    text-decoration: none;
+    z-index: 20;
+}
+
+.menu-bar-overlay .separator {
+    color: #000;
+    pointer-events: none;
+}
+
+.menu-bar-overlay-bottom {
+    position: absolute;
+    top: 857px;
+    left: 77px;
+    display: flex;
+    gap: 15px;
+    font-size: 1em;
+    z-index: 10;
+    font-family: Helvetica, sans-serif;
+}
+
+.menu-bar-overlay-bottom a {
+    color: #000;
+    text-decoration: none;
+    z-index: 20;
+}
+
+.menu-bar-overlay-bottom .separator {
+    color: #000;
+    pointer-events: none;
+}
+
+/* --- Representatives Page --- */
+
+    body.representatives .image-container {
+        position: relative;
+        width: 100vw;
+        min-height: auto;
+    }
+
+    body.representatives .image-container svg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    body.representatives .menu-bar-overlay {
+        top: 90px;
+        left: 216px;
+        font-size: 1.1em;
+    }
+
+    body.representatives .menu-bar-overlay a {
+        color: #000;
+        text-decoration: none;
+        z-index: 20;
+    }
+
+/* --- Research Page --- */
+
+        body.research .image-container {
+            position: relative;
+            width: 100vw;
+            min-height: auto;
+        }
+
+        body.research .image-container svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        body.research .menu-bar-overlay {
+            top: 90px;
+            left: 216px;
+            font-size: 1.1em;
+        }
+
+        body.research .menu-bar-overlay a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        /* --- Research Page - Document --- */
+
+        body.research .document-embed {
+            position: absolute;
+            top: 27%;
+            left: 370px;
+            width: 370px;
+            height: 63%;
+            z-index: 5;
+            border: none;
+        }
+
+        .document-embed iframe {
+            transform-origin: top left;
+            transform: scale(0.8);
+        }
+
+/* Hiring Page */
+
+        body.hiring .image-container {
+            position: relative;
+            width: 100vw;
+            min-height: auto;
+        }
+    
+        body.hiring .image-container svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
+        body.hiring .menu-bar-overlay {
+            top: 90px;
+            left: 216px;
+            font-size: 1.1em;
+        }
+    
+        body.hiring .menu-bar-overlay a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .administration-jobs {
+            position: absolute;
+            top: 240px;
+            left: 100px;
+            font-size: large;
+        }
+
+        body.hiring .administration-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .observation-jobs {
+            position: absolute;
+            top: 240px;
+            left: 450px;
+            font-size: large;
+        }
+
+        body.hiring .observation-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .psychology-jobs {
+            position: absolute;
+            top: 240px;
+            left: 785px;
+            font-size: large;
+        }
+
+        body.hiring .psychology-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .communications-jobs {
+            position: absolute;
+            top: 240px;
+            left: 1100px;
+            font-size: large;
+        }
+
+        body.hiring .communications-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .neurology-jobs {
+            position: absolute;
+            top: 375px;
+            left: 115px;
+            font-size: large;
+        }
+
+        body.hiring .neurology-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .information-systems-jobs {
+            position: absolute;
+            top: 360px;
+            left: 450px;
+            font-size: large;
+        }
+
+        body.hiring .information-systems-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .maintenance-jobs {
+            position: absolute;
+            top: 370px;
+            left: 785px;
+            font-size: large;
+        }
+
+        body.hiring .maintenance-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .data-logging-jobs {
+            position: absolute;
+            top: 370px;
+            left: 1125px;
+            font-size: large;
+        }
+
+        body.hiring .data-logging-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .neuroscience-jobs {
+            position: absolute;
+            top: 505px;
+            left: 105px;
+            font-size: large;
+        }
+
+        body.hiring .neuroscience-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .biochemistry-jobs {
+            position: absolute;
+            top: 508px;
+            left: 445px;
+            font-size: large;
+        }
+
+        body.hiring .biochemistry-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .anatomy-jobs {
+            position: absolute;
+            top: 508px;
+            left: 805px;
+            font-size: large;
+        }
+
+        body.hiring .anatomy-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .initiations-jobs {
+            position: absolute;
+            top: 508px;
+            left: 1135px;
+            font-size: large;
+        }
+
+        body.hiring .initiations-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .distributions-jobs {
+            position: absolute;
+            top: 642px;
+            left: 108px;
+            font-size: large;
+        }
+
+        body.hiring .distributions-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .transports-jobs {
+            position: absolute;
+            top: 642px;
+            left: 450px;
+            font-size: large;
+        }
+
+        body.hiring .transports-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .spectations-jobs {
+            position: absolute;
+            top: 642px;
+            left: 785px;
+            font-size: large;
+        }
+
+        body.hiring .spectations-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+        body.hiring .silence-jobs {
+            position: absolute;
+            top: 642px;
+            left: 1145px;
+            font-size: large;
+        }
+
+        body.hiring .silence-jobs a {
+            color: #000;
+            text-decoration: none;
+            z-index: 20;
+        }
+
+/* Intentional Error Page */
+
+body.error {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body.error .image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+body.error .image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Services Page */
+
+body.services .schedule-an-appointment {
+    position: absolute;
+    top: 625px;
+    left: 100px;
+    font-size: large;
+}
+
+body.services .schedule-an-appointment a {
+    color: #000;
+    text-decoration: none;
+    z-index: 20;
+}
+
+body.services .apply-here {
+    position: absolute;
+    top: 380px;
+    left: 725px;
+    font-size: large;
+}
+
+body.services .apply-here a {
+    color: #000;
+    text-decoration: none;
+    z-index: 20;
+}
+
+body.services .put-in-a-request {
+    position: absolute;
+    top: 625px;
+    left: 700px;
+    font-size: large;
+}
+
+body.services .put-in-a-request a {
+    color: #000;
+    text-decoration: none;
+    z-index: 20;
+}
+
+
+/* Initiation Page */
+
+body.services .invisible-link-initiation {
+    position: absolute;
+    top: 430px;
+    left: 370px;
+    width: 14%;
+    height: 30%;
+    margin-top: -7.5%;
+    margin-left: -5%;
+    z-index: 40;
+}
+
+body.services .invisible-link-initiation a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: transparent;
+    background-color: transparent;
+    z-index: 41;
+}
+
+/* Cerebral Recognizer Page */
+
+body.cerebral-recognizer .image-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body.cerebral-recognizer .image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body.cerebral-recognizer .invisible-link-cerebral-recognizer {
+    position: absolute;
+    top: 700px;
+    left: 900px;
+    width: 14%;
+    height: 30%;
+    margin-top: -7.5%;
+    margin-left: -5%;
+    z-index: 40;
+}
+
+body.cerebral-recognizer .invisible-link-cerebral-recognizer a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: transparent;
+    background-color: transparent;
+    z-index: 41;
+}
+
+/* Administration Page */
+
+body.administration .image-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body.administration .image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body.administration .invisible-link-administration {
+    position: absolute;
+    top: 200px;
+    left: 360px;
+    width: 14%;
+    height: 10%;
+    margin-top: -7.5%;
+    margin-left: -5%;
+    z-index: 40;
+}
+
+body.administration .invisible-link-administration a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: transparent;
+    background-color: transparent;
+    z-index: 41;
+}
+
+/* Layout Page */
+
+body.layout .image-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body.layout .image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body.layout .invisible-link-layout {
+    position: absolute;
+    top: 180px;
+    left: 205px;
+    width: 7%;
+    height: 13%;
+    margin-top: -7.5%;
+    margin-left: -5%;
+    z-index: 40;
+
+}
+
+body.layout .invisible-link-layout a { 
+    display: block; 
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: transparent; 
+    background-color: transparent; 
+    z-index: 41; /
+}
