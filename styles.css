@@ -581,3 +581,152 @@ body.layout .invisible-link-layout a {
     background-color: transparent; 
     z-index: 41;
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .menu-bar-overlay {
+        top: 20px;
+        left: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.9em;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .menu-bar-overlay a {
+        padding: 5px 0;
+    }
+
+    .menu-bar-overlay .separator {
+        display: none;
+    }
+
+    .menu-bar-overlay-bottom {
+        top: auto;
+        bottom: 20px;
+        left: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.9em;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .menu-bar-overlay-bottom a {
+        padding: 5px 0;
+    }
+
+    .menu-bar-overlay-bottom .separator {
+        display: none;
+    }
+
+    /* --- Representatives Page --- */
+    body.representatives .menu-bar-overlay {
+        top: 20px;
+        left: 10px;
+        font-size: 1em;
+    }
+
+    /* --- Research Page --- */
+    body.research .menu-bar-overlay {
+        top: 20px;
+        left: 10px;
+        font-size: 1em;
+    }
+
+    body.research .document-embed {
+        top: 30%;
+        left: 10%;
+        width: 80%;
+        height: auto;
+    }
+
+    .document-embed iframe {
+        transform: scale(0.6);
+        transform-origin: top left;
+    }
+
+    /* Hiring Page */
+    body.hiring .administration-jobs,
+    body.hiring .observation-jobs,
+    body.hiring .psychology-jobs,
+    body.hiring .communications-jobs,
+    body.hiring .neurology-jobs,
+    body.hiring .information-systems-jobs,
+    body.hiring .maintenance-jobs,
+    body.hiring .data-logging-jobs,
+    body.hiring .neuroscience-jobs,
+    body.hiring .biochemistry-jobs,
+    body.hiring .anatomy-jobs,
+    body.hiring .initiations-jobs,
+    body.hiring .distributions-jobs,
+    body.hiring .transports-jobs,
+    body.hiring .spectations-jobs,
+    body.hiring .silence-jobs {
+        position: static;
+        margin: 10px 0;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    /* Intentional Error Page */
+
+    /* Services Page */
+    body.services .schedule-an-appointment,
+    body.services .apply-here,
+    body.services .put-in-a-request {
+        position: static;
+        margin: 15px auto;
+        font-size: 1.2em;
+        display: block;
+        text-align: center;
+    }
+
+    /* Initiation Page */
+    body.services .invisible-link-initiation {
+        top: 40%;
+        left: 50%;
+        width: 60%;
+        height: 20%;
+        margin-top: -10%;
+        margin-left: -30%;
+    }
+
+    /* Cerebral Recognizer Page */
+    body.cerebral-recognizer .invisible-link-cerebral-recognizer {
+        top: 60%;
+        left: 50%;
+        width: 60%;
+        height: 20%;
+        margin-top: -10%;
+        margin-left: -30%;
+    }
+
+    /* Administration Page */
+    body.administration .invisible-link-administration {
+        top: 30%;
+        left: 50%;
+        width: 60%;
+        height: 15%;
+        margin-top: -7.5%;
+        margin-left: -30%;
+    }
+
+    /* Layout Page */
+    body.layout .invisible-link-layout {
+        top: 30%;
+        left: 50%;
+        width: 60%;
+        height: 20%;
+        margin-top: -10%;
+        margin-left: -30%;
+    }
+}
