@@ -579,5 +579,5 @@ body.layout .invisible-link-layout a {
     text-decoration: none;
     color: transparent; 
     background-color: transparent; 
-    z-index: 41; /
+    z-index: 41;
 }
